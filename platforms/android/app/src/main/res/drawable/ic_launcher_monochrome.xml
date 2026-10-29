@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  Themed-icon layer: the tower alone, one flat shape with its three faces cut apart, framed exactly
-  like ic_launcher_foreground. A launcher keeps only this layer's alpha and paints it in the theme
-  colour, so it has to be transparent everywhere the tower isn't. The full-colour foreground used to
-  stand in for it, and that artwork is opaque edge to edge, so themed icons (Material 3 Expressive)
-  showed ARMSX2 as a plain disc. The art is derived from savetowerforeground (same 1024px frame).
--->
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:inset="18%">
-    <bitmap
-        android:antialias="true"
-        android:gravity="fill"
-        android:src="@drawable/ic_launcher_monochrome_art" />
-</inset>
+<!-- The Wolf Émulateur themed (monochrome) icon: wolf silhouette, eyes and nose cut out. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="0.85" android:scaleY="0.85">
+    <path android:fillColor="#FFFFFFFF" android:pathData="M30,24 L43,42 L33,49 Z M78,24 L65,42 L75,49 Z" />
+    <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd" android:pathData="M33,49 L43,41 L54,38 L65,41 L75,49 L79,61 L68,71 L61,82 L54,87 L47,82 L40,71 L29,61 Z M39,54 L48,57 L46,60.5 L41,58.5 Z M69,54 L60,57 L62,60.5 L67,58.5 Z M49.5,75.5 L58.5,75.5 L54,80.5 Z" />
+    </group>
+</vector>

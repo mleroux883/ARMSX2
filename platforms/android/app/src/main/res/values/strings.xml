@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">ARMSX2</string>
+    <!-- The Wolf Émulateur: fork of ARMSX2 (https://github.com/ARMSX2/ARMSX2), itself based on PCSX2. GPL-3.0. -->
+    <string name="app_name">The Wolf Émulateur</string>
     <!-- Home-screen label for nightlies, which install as a separate package (com.armsx2.nightly)
          so they sit beside the stable app rather than replacing it. -->
-    <string name="app_name_nightly">ARMSX2 Nightly</string>
+    <string name="app_name_nightly">The Wolf Nightly</string>
 </resources>

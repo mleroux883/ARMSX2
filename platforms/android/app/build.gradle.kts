@@ -40,7 +40,7 @@ val armsx2MarchExtra = providers.gradleProperty("armsx2.marchExtra").orElse("")
 // DIAGNOSTIC ONLY (-Parmsx2.recTestHooks=true): compiles the EERecFallback opcode-group
 // interpreter bisect into the EE recompiler. Never set for a shipped build.
 val armsx2RecTestHooks = providers.gradleProperty("armsx2.recTestHooks").orElse("false")
-val armsx2ApplicationId = providers.gradleProperty("armsx2.applicationId").orElse("com.armsx2")
+val armsx2ApplicationId = providers.gradleProperty("armsx2.applicationId").orElse("fr.mleroux.thewolf")
 // Distribution channel, baked into BuildConfig so the app knows which release stream it belongs to
 // without guessing from the version string. "nightly" builds ship a distinct applicationId and
 // label (see ci-nightly-dualcore.sh) so they install alongside the stable app instead of replacing
@@ -266,7 +266,9 @@ android {
             // In-app GitHub-release updater. Github flavor only — Play forbids self-updating,
             // so the real updater + REQUEST_INSTALL_PACKAGES live in src/github and this stays
             // false for play (which uses the src/play no-op stub).
-            buildConfigField("boolean", "IN_APP_UPDATER", "true")
+            // The Wolf Émulateur: off. The updater pulls official ARMSX2 releases, which would
+            // offer to install the upstream app instead of this fork.
+            buildConfigField("boolean", "IN_APP_UPDATER", "false")
             // LSFG frame generation. Github flavor only, for two independent reasons: the
             // upstream project's consumer app is licensed "No Play Store", and the feature
             // only works when the user supplies their own Lossless.dll, which is not a shape
