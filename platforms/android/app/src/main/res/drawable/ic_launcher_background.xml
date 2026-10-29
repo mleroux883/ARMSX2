@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- The Wolf Émulateur launcher background: night-sky gradient. -->
+<!-- The Wolf Émulateur launcher background: plain white, matching the logo artwork. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
-    <gradient
-        android:angle="315"
-        android:startColor="#0A0F1E"
-        android:centerColor="#16213E"
-        android:endColor="#1F3A68" />
+    <solid android:color="#FFFFFF" />
 </shape>
